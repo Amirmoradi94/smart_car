@@ -7,8 +7,8 @@ Created on Thu Dec  3 21:40:05 2020
 
 
 import cv2
-from utils.undistortion import undistortion
-from utils.angle_calculation import angle_calculation
+from Utils.undistortion import undistortion
+from Utils.angle_calculation import angle_calculation
 import numpy as np
 import serial
 
@@ -26,7 +26,7 @@ Proj_L = np.load("SmartCar/Calibration/matrices/Proj_L.npy")
 
 ser = serial.Serial("COM5", 9600)
 
-
+# Set this value according to your project.
 mirror_pt = [-10, 10, 150]
 
 while(True):
@@ -114,7 +114,8 @@ while(True):
             # Again, put in homogeneous form before using them
             origin_R /= origin_R[2]
             origin_L /= origin_L[2]
-            
+        
+        # Press "q" to break the loop
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
         
