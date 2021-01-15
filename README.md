@@ -6,3 +6,15 @@ SmartCar is a combination of hardware and software development to automate rear 
 
 ## Flow
 SmartCar follows four steps to adjust the mirror specifically for the driver's view.
+![alt text](https://github.com/Amirmoradi94/SmartCar/blob/main/1.jpg)
+
+## Run
+To use all the capabilities of SmartCar, you must follow above figure's steps. Therefore, you just need to run main.py in the main repository./ You can also stereo calibration, real-time face detection, or the algorithm of the angle calculation for the rear mirror.
+
+## Dependency
+Before anything, make sure to have following libraries and packages.\
+numpy
+serial
+opencv
+sympy
+glob
