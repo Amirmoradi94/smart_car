@@ -13,8 +13,8 @@ To use all the capabilities of SmartCar, you must follow above figure's steps. T
 
 ## Dependency
 Before anything, make sure to have following libraries and packages.\
-numpy
-serial
-opencv
-sympy
-glob
+*numpy*\
+*serial\
+opencv\
+sympy\
+glob*
